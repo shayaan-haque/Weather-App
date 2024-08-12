@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to bottom, #89CFF0, #FFD700);
+            animation: gradient 10s ease infinite;
+        }
+
+        @keyframes gradient {
+            0% { background-color: #89CFF0; }
+            50% { background-color: #FFD700; }
+            100% { background-color: #89CFF0; }
+        }
+
+        h1 {
+            font-size: 3em;
+            color: white;
+            text-shadow: 2px 2px 4px #000000;
+        }
+
+        form {
+            margin-top: 20px;
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            font-size: 1.2em;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            width: 80%;
+            max-width: 300px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            color: white;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Weather App</h1>
+        <form action="/" method="post">
+            <label for="cityInput">City Name:</label>
+            <input id="cityInput" type="text" name="cityName">
+            <button type="submit">GO</button>
+        </form>
+    </div>
+</body>
+</html>
